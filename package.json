@@ -1,0 +1,6 @@
+{
+  "name": "yarn2-git-checksum-error",
+  "dependencies": {
+    "objection": "git+https://github.com/ovos/objection.js.git#1.6.10-mod.0"
+  }
+}
