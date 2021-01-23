@@ -21,6 +21,12 @@ jobs:
       - name: cat yarn.lock
         run: cat yarn.lock
 
+      - name: Archive yarn cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: yarn-cache
+          path: .yarn/cache
+
   install-macos:
     runs-on: macos-latest
 
@@ -32,3 +38,9 @@ jobs:
 
       - name: cat yarn.lock
         run: cat yarn.lock
+
+      - name: Archive yarn cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: yarn-cache
+          path: .yarn/cache
