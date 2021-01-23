@@ -24,7 +24,7 @@ jobs:
       - name: Archive yarn cache
         uses: actions/upload-artifact@v2
         with:
-          name: yarn-cache
+          name: yarn-cache-ubuntu
           path: .yarn/cache
 
   install-macos:
@@ -42,5 +42,5 @@ jobs:
       - name: Archive yarn cache
         uses: actions/upload-artifact@v2
         with:
-          name: yarn-cache
+          name: yarn-cache-macos
           path: .yarn/cache
